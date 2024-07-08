@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+#todoBlock{
+    width: 100%;
+}
+#todoBlock > article{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+#todoBlock > article > header{
+    flex-basis: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#todoBlock > article > header > h1{
+    font-size: 54px;
+    color: rgb(51, 186, 51);
+    margin-bottom: 30px;
+}
+header > form > #taskInpValue{
+    width: 500px;
+    height: 54px;
+    border-radius: 35px;
+    padding:0px 25px;
+    font-size: 24px;
+    outline: none;
+    border: 2px solid rgb(51, 186, 51);
+    background-color: transparent;
+    color: #fff;
+}
+header > form > #btn{
+    padding: 15px 30px;
+    border-radius: 35px;
+    background-color: rgb(51, 186, 51);
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    transition: all 0.3s ease;
+}
+header > form > #btn:hover{
+    background-color: #fff;
+    color: rgb(51, 186, 51);
+    border: 2px solid rgb(51, 186, 51);
+    transition: all 0.3s ease;
+}
+
+#todoBlock > article > main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main > #tasks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main > #tasks >  h2{
+    font-size: 44px;
+    color: rgb(51, 186, 51);
+}
+main > #tasks > .task{
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.task > .content{
+    height: inherit;
+    flex-basis: 60%;
+}
+.task > .content > .text{
+    width:350px ;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    padding: 0px 25px;
+    font-size: 20px;
+}
+.task > .actions{
+    height: inherit;
+    flex-basis: 40%;
+}
+.task > .actions > .edit , .delete{
+padding: 14px 20px;
+border-radius: 25px;
+border: none;
+background-color: rgb(51, 186, 51);
+color: #fff;
+font-weight: bold;
+}
